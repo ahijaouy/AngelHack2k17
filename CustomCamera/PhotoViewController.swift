@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SVProgressHUD
 
 class PhotoViewController: UIViewController {
     
@@ -55,6 +56,10 @@ class PhotoViewController: UIViewController {
     }
     
     
+    override func viewDidAppear(_ animated: Bool) {
+        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.black)
+        SVProgressHUD.show(withStatus: "Processing Image");
+    }
     // Actual Code for Camera Shit
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +76,7 @@ class PhotoViewController: UIViewController {
                             if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
                                 
                                 print("Data: \(utf8Text)") // original server data as UTF8 string
+                                SVProgressHUD.dismiss();
                                 self.createAlert(title: utf8Text, message: "Click Ok to Dismiss");
                 }
             }
@@ -89,7 +95,7 @@ class PhotoViewController: UIViewController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         
         //CREATING ON BUTTON
-        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default, handler: { (action) in
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { (action) in
             alert.dismiss(animated: true, completion: nil)
             self.dismiss(animated: true, completion: nil)
             print ("Ok")

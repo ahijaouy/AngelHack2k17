@@ -7,6 +7,7 @@ target 'CustomCamera' do
 
   # Pods for CustomCamera
   pod ‘Alamofire’
+  pod 'SVProgressHUD'
 
 
 
