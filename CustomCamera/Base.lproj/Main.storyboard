@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dYE-RA-WeO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,21 +23,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSh-MQ-A5f">
-                                <rect key="frame" x="16" y="587" width="343" height="80"/>
+                                <rect key="frame" x="0.0" y="572" width="375" height="95"/>
+                                <color key="backgroundColor" red="0.1157677993" green="0.88833767180000001" blue="0.86217296119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="v9i-Y5-EEE"/>
+                                    <constraint firstAttribute="height" constant="95" id="v9i-Y5-EEE"/>
                                 </constraints>
-                                <state key="normal" title="Take Picture"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="21"/>
+                                <state key="normal" title="Take Picture">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="takePhoto2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AKZ-vV-t82"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorting App =D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coS-md-sY0">
+                                <rect key="frame" x="0.0" y="20" width="375" height="75"/>
+                                <color key="backgroundColor" red="0.1157677993" green="0.88833767180000001" blue="0.86217296119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="nrJ-UD-hQR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="coS-md-sY0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1La-mS-yug"/>
+                            <constraint firstItem="zSh-MQ-A5f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2hB-LW-3he"/>
+                            <constraint firstAttribute="trailing" secondItem="coS-md-sY0" secondAttribute="trailing" id="6D8-2e-H7E"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zSh-MQ-A5f" secondAttribute="bottom" id="Dqj-dk-nod"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zSh-MQ-A5f" secondAttribute="trailing" id="LBt-Oq-2Au"/>
+                            <constraint firstAttribute="trailing" secondItem="zSh-MQ-A5f" secondAttribute="trailing" id="SSG-v9-GVv"/>
                             <constraint firstItem="zSh-MQ-A5f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Tl4-K5-ICF"/>
+                            <constraint firstItem="coS-md-sY0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uVv-0c-hxz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="q6q-Yl-I25">
@@ -72,12 +91,17 @@
                                     <action selector="goBack:" destination="Igs-uC-hbY" eventType="touchUpInside" id="Z9i-iQ-lhB"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zgr-cf-bGh">
-                                <rect key="frame" x="0.0" y="58" width="375" height="609"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zgr-cf-bGh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zgr-cf-bGh" firstAttribute="leading" secondItem="r0D-W2-hkC" secondAttribute="leading" id="1r4-iF-qUX"/>
+                            <constraint firstItem="dpW-jM-0nD" firstAttribute="top" secondItem="zgr-cf-bGh" secondAttribute="bottom" id="EOD-i5-q2Z"/>
+                            <constraint firstAttribute="trailing" secondItem="zgr-cf-bGh" secondAttribute="trailing" id="geJ-Sg-Kbu"/>
+                            <constraint firstItem="zgr-cf-bGh" firstAttribute="top" secondItem="r0D-W2-hkC" secondAttribute="top" id="nrp-DW-YYU"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="zgr-cf-bGh" id="R01-O8-shG"/>
@@ -86,24 +110,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mc4-Nw-MFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1709.5999999999999" y="190.25487256371815"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="1bI-Yg-Tmb">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dYE-RA-WeO" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K03-S0-sdl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jiY-gA-iZI"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aVC-mF-Q94" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="84" y="187.55622188905548"/>
         </scene>
     </scenes>
 </document>
