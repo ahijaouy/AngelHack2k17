@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomCamera/PhotoViewController.swift"
+            timestampString = "523106418.603185"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomCamera.PhotoViewController.viewDidLoad () -&gt; ()"
+                  moduleName = "CustomCamera"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Oberon/DevEnvironment/iOSDev/CustomCamera/CustomCamera/PhotoViewController.swift"
+                  timestampString = "523110284.816887"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomCamera.PhotoViewController.viewDidLoad () -&gt; ()"
+                  moduleName = "CustomCamera"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Oberon/DevEnvironment/iOSDev/CustomCamera/CustomCamera/PhotoViewController.swift"
+                  timestampString = "523110284.819017"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "144">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomCamera/PhotoViewController.swift"
+            timestampString = "523110286.676769"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomCamera.PhotoViewController.(viewDidLoad () -&gt; ()).(closure #1)"
+                  moduleName = "CustomCamera"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Oberon/DevEnvironment/iOSDev/CustomCamera/CustomCamera/PhotoViewController.swift"
+                  timestampString = "523111389.788"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomCamera.PhotoViewController.(viewDidLoad () -&gt; ()).(closure #1)"
+                  moduleName = "CustomCamera"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Oberon/DevEnvironment/iOSDev/CustomCamera/CustomCamera/PhotoViewController.swift"
+                  timestampString = "523111389.789731"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

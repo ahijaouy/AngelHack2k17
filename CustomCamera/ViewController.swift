@@ -80,6 +80,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         takePhoto = true
         
     }
+    @IBAction func takePhoto2(_ sender: Any) {
+        takePhoto = true
+    }
     
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputSampleBuffer sampleBuffer: CMSampleBuffer!, from connection: AVCaptureConnection!) {
         
