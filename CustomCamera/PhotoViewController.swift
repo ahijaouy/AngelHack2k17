@@ -70,7 +70,7 @@ class PhotoViewController: UIViewController {
             let compressed = compressImage(availableImage);
             let parameters: Parameters = ["image":encodeImageToBase64(image: compressed)]
             
-            Alamofire.request("https://sheltered-falls-15180.herokuapp.com/andre", method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
+            Alamofire.request("https://angelhack-trc.herokuapp.com/andre", method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
                 
                 
                             if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
